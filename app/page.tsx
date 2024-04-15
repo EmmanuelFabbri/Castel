@@ -129,7 +129,7 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <h3 className="text-center pt-10">_________________________________________________</h3>
+            <h3 className="text-center pt-10">_________________</h3>
           </div>
         </section>
       </main>
