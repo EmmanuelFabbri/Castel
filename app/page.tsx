@@ -55,7 +55,7 @@ export default function Home() {
               <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer" />
             </li>
             <li>
-              <a className="bg-slate-600 text-white px-4 py-2 rounded-md mr-10 " href="https://drive.google.com/uc?id=1WTc0_ID_HERE&export=download" target="_blank">Kárdex</a>
+              <a className="bg-slate-600 text-white px-4 py-2 rounded-md mr-10 " href="https://drive.google.com/uc?id=1lJ9T4WTwDMco4BG8v_m4SB-twEESYj24&export=download" target="_blank">Kárdex</a>
             </li>
           </ul>
         </nav>
