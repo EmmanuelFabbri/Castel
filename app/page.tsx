@@ -19,16 +19,50 @@ export default function Home() {
       </Head>
 
       <main className=" bg-gray-900 px-10 md:px-20 lg:px-35">
-        <section className="min-h-screen ">
-          <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl text-white">Emmanuel Fabbri</h1>
-            <ul className="flex items-center">
-              <li>
-                < BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer"/>
-              </li>
-              <li><a className="bg-slate-600 text-white px-4 py-2 rounded-md ml-8" href="https://drive.google.com/uc?id=1WTc0_PRXrgjf_6wm8qLFbL_sFeq4_Fba&export=download" target="_blank">Kárdex</a></li>
-            </ul>
-          </nav>
+        <section className="min-h-screen" id="inicio">
+        <nav className="fixed top-0 left-0 w-full py-4 bg-gray-900 flex flex-wrap justify-between items-center z-50">
+          <h1 className="text-xl text-white ml-10">Emmanuel Fabbri</h1>
+          <ul className="flex space-x-4 sm:hidden mt-5 mb-5">
+            <li>
+              <a className="text-base text-white hover:underline" href="#inicio">Inicio</a>
+            </li>
+            <li>
+              <a className="text-base text-white hover:underline" href="#inventario">Inventario</a>
+            </li>
+            <li>
+              <a className="text-base text-white hover:underline" href="#areas-de-opportunity">Áreas de Oportunidad</a>
+            </li>
+            <li>
+              <a className="text-base text-white hover:underline" href="#ubicacion">Ubicación</a>
+            </li>
+          </ul>
+          <ul className="hidden sm:flex space-x-4">
+            <li>
+              <a className="text-base text-white hover:underline" href="#inicio">Inicio</a>
+            </li>
+            <li>
+              <a className="text-base text-white hover:underline" href="#inventario">Inventario</a>
+            </li>
+            <li>
+              <a className="text-base text-white hover:underline" href="#areas-de-opportunity">Áreas de Oportunidad</a>
+            </li>
+            <li>
+              <a className="text-base text-white hover:underline" href="#ubicacion">Ubicación</a>
+            </li>
+          </ul>
+          <ul className="flex space-x-4 ml-4">
+            <li>
+              <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer" />
+            </li>
+            <li>
+              <a className="bg-slate-600 text-white px-4 py-2 rounded-md mr-10 " href="https://drive.google.com/uc?id=1WTc0_ID_HERE&export=download" target="_blank">Kárdex</a>
+            </li>
+          </ul>
+        </nav>
+
+        <main className="pt-10">
+        </main>
+
           <div className="text-center p-10">
             <h2 className="text-5xl py-2 text-white font-medium md:text-6xl">Castel</h2>
             <h3 className="text-2xl py-2 md:text-3xl mt-10 text-white">Presentación</h3>
@@ -43,7 +77,7 @@ export default function Home() {
             <Image src={castel} alt="#" />
           </div>
         </section>
-        <section>
+        <section id="inventario">
           <div>
             <h3 className="text-5xl py-1 text-white">Inventario</h3>
             <p className="text-mid py-2 leading-8 text-white">Se auditaron un total de 103 equipos de computo en las diferentes áreas de la empresa Caste. De estos equipos, 46 son laptops y 55 son equipos de escritorio. En el botón Kárdex puedes encontrar el desglose completo.</p>
@@ -59,7 +93,7 @@ export default function Home() {
             <p className="text-mid py-2 leading-8 text-white">Se recomienda realizar copias de seguridad periódicas de los datos de todos los equipos de computo.</p>
           </div>
         </section>
-        <section>
+        <section id="areas-de-opportunity">
           <div>
             <h3 className="text-5xl py-1 mt-40 text-white">Áreas de Oportunidad</h3>
             <p className="mt-10 mb-5 text-2xl text-white">1. Optimización de la gestión de inventario:</p>
@@ -108,7 +142,7 @@ export default function Home() {
             <p className="mt-5 mb-10 text-white">Solución: Implementar un proceso de postventa que incluya el seguimiento a los clientes, la gestión de las garantías</p>
           </div>
         </section>
-        <section className="py-10">
+        <section className="py-10" id="ubicacion">
           <div>
             <h3 className="text-5xl py-1 text-white ">Ubicación del CEDIS Auditado</h3>
             <p className="mt-10 mb-5 text-2xl text-white">Dirección:</p>
